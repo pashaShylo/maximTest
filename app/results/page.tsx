@@ -1,4 +1,5 @@
 import { db } from "../../db";
+import { unstable_noStore as noStore } from "next/cache";
 
 const getData = async () => {
   const data = await db.userResult.findMany();
@@ -6,6 +7,7 @@ const getData = async () => {
 };
 
 export default async function BlogPage() {
+  noStore();
   const res = await getData();
 
   return (
@@ -32,5 +34,3 @@ export default async function BlogPage() {
     </div>
   );
 }
-
-export const dynamic = "force-dynamic";
