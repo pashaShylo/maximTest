@@ -9,7 +9,6 @@ const getData = async () => {
 export default async function BlogPage() {
   noStore();
   const res = await getData();
-
   return (
     <div>
       <h1 className="text-4xl">Результати</h1>
