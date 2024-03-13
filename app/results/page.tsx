@@ -12,7 +12,7 @@ export default async function BlogPage() {
     <div>
       <h1 className="text-4xl">Результати</h1>
       <div className="flex flex-col gap-8">
-        {res.map((item, index) => (
+        {res.map((item: any, index) => (
           <div className="flex flex-col gap-4" key={index}>
             <h1 className="text-left text-2xl">{item.userName}</h1>
             {item.result.map((item2: any) => {
