@@ -46,6 +46,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@prisma/nextjs-monorepo-workaround-plugin": "^5.11.0"
+    "@prisma/nextjs-monorepo-workaround-plugin": "^5.11.0",
+    "prisma": "^5.11.0"
   }
 }
