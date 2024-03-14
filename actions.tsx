@@ -36,7 +36,6 @@ export const createUserResult = async (props: Props) => {
     });
 
     revalidatePath("/results");
-    revalidatePath("/", "layout");
 
     return result;
   } catch (error) {
